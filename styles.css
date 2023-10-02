@@ -5,22 +5,22 @@ body {
     background-color: #444444;
 }
 
-/* Container for the entire page */
+
 #main_container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #636363;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Add some border radius for a softer look */
+    border-radius: 10px; 
 }
 
-/* Section 1 styles */
+
 #section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     padding: 20px;
     background-color: #3b3b3b;
     color: #fff;
@@ -28,63 +28,97 @@ body {
     border-top-right-radius: 10px;
 }
 
-/* Box1 styles */
+
 .box1 {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
-    flex-basis: calc(30% - 20px); /* Adjust as needed */
+    align-items: flex-start; 
+    flex-basis: calc(30% - 20px); 
 }
 
 .box1 img {
     max-width: 100%;
     border-radius: 50%;
     margin-right: 20px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Add a subtle shadow to the image */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); 
 }
 
 .info {
-    flex-direction: column; /* Display info vertically */
+    flex-direction: column; 
 }
 
-/* Box2 styles */
+
 .box2 {
-    flex-basis: calc(30% - 20px); /* Adjust as needed */
+    flex-basis: calc(30% - 20px); 
 }
 
-/* Box3 styles */
+
 .box3 {
-    flex-basis: 100%; /* Full width for biography */
+    flex-basis: 100%; 
 }
 
-/* Section 2 styles */
+
 #section2 {
     display: flex;
-    flex-direction: column; /* Display containers in a column */
-    align-items: flex-start; /* Align items to the start (left) */
+    flex-direction: column; 
+    align-items: flex-start; 
     padding: 20px;
     background-color: #616161;
-    color: #fff; /* Set text color to white */
+    color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-/* Container styles for Employment, Education, and Skills */
+
 .container {
-    flex-basis: 100%; /* Full width for containers */
-    margin: 10px 0; /* Adjust margin for spacing between containers */
+    flex-basis: 100%; 
+    margin: 10px 0; 
     padding: 15px;
     background-color: #3f3f3f;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-/* Entry and Skill styles */
+
 .entry, .skill {
     margin: 10px 0;
 }
 
-/* Progress bar styles (you can modify these as needed) */
+
 .progress {
     height: 10px;
     background-color: #3498db;
+}
+
+@media (max-width: 600px) {
+    
+    #main_container {
+        max-width: 100%; 
+        padding: 10px; 
+    }
+
+   
+    #section1 {
+        flex-direction: column; 
+    }
+
+    
+    .box1 {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+
+  
+    .box2 {
+        flex-basis: 100%; 
+    }
+
+  
+    #section2 {
+        flex-direction: column; 
+    }
+
+
+    .container {
+        margin: 10px 0; 
+    }
 }
