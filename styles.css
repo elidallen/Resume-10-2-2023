@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+}
+
+/* Container for the entire page */
+#main_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #636363;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Add some border radius for a softer look */
+}
+
+/* Section 1 styles */
+#section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #3b3b3b;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Box1 styles */
+.box1 {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    flex-basis: calc(30% - 20px); /* Adjust as needed */
+}
+
+.box1 img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Add a subtle shadow to the image */
+}
+
+.info {
+    flex-direction: column; /* Display info vertically */
+}
+
+/* Box2 styles */
+.box2 {
+    flex-basis: calc(30% - 20px); /* Adjust as needed */
+}
+
+/* Box3 styles */
+.box3 {
+    flex-basis: 100%; /* Full width for biography */
+}
+
+/* Section 2 styles */
+#section2 {
+    display: flex;
+    flex-direction: column; /* Display containers in a column */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px;
+    background-color: #616161;
+    color: #fff; /* Set text color to white */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Container styles for Employment, Education, and Skills */
+.container {
+    flex-basis: 100%; /* Full width for containers */
+    margin: 10px 0; /* Adjust margin for spacing between containers */
+    padding: 15px;
+    background-color: #3f3f3f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Entry and Skill styles */
+.entry, .skill {
+    margin: 10px 0;
+}
+
+/* Progress bar styles (you can modify these as needed) */
+.progress {
+    height: 10px;
+    background-color: #3498db;
+}
